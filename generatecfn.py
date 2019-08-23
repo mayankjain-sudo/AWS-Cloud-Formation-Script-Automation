@@ -14,7 +14,7 @@ def create_ec2():
         }
     }
 
-    loc = ("C:\\Users\\mayank\\Documents\\pythonWorkspace\\autogenerateCFN\\EC2Details.xlsx")
+    loc = ("C:\\Users\\mayank\\Documents\\pythonWorkspace\\autogenerateCFN\\Details.xlsx")
 
     workbook = xlrd.open_workbook(loc, on_demand=True)
     worksheet = workbook.sheet_by_index(0)
@@ -76,7 +76,7 @@ def create_ec2():
             # print(tdict)
             taglist.append(tdict)
     ##print(taglist)
-    df = pd.read_excel("C:\\Users\\mayank\\Documents\\pythonWorkspace\\autogenerateCFN\\EC2Details.xlsx",
+    df = pd.read_excel("C:\\Users\\mayank\\Documents\\pythonWorkspace\\autogenerateCFN\\Details.xlsx",
                        sheet_name='EC2Details')  # can also index sheet by name or fetch all sheets
 
     ElasticGpuSpecificationsList = df['ElasticGpuSpecifications'].tolist()
@@ -143,7 +143,7 @@ def create_sg():
             }
         }
     }
-    loc = ("C:\\Users\\mayank\\Documents\\pythonWorkspace\\autogenerateCFN\\EC2Details.xlsx")
+    loc = ("C:\\Users\\mayank\\Documents\\pythonWorkspace\\autogenerateCFN\\Details.xlsx")
     workbook = xlrd.open_workbook(loc, on_demand=True)
     worksheet = workbook.sheet_by_index(1)
     first_row = []  # The row where we stock the name of the column
