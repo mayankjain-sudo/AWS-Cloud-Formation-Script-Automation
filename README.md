@@ -18,5 +18,5 @@ Note: Before running the script and making excel check the sample excel file.
 
 You can also configure Apache Web Server website to add a feature of uploading file to browser and generating the CFN and download it on your system. 
 
-I use php for uploading the file on browser 
+I use php for uploading the file on browser.
 
