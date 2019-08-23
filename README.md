@@ -4,6 +4,12 @@ This script will create a AWS Cloud Formtion script in JSON format
 
 # Requirement
 
-Python3 is install on your system and excel.
+Python3 and Excel is install on your system.
 
-Creating Cloud Formation Script by giving input from excel file
+# Steps to follow
+
+1.Give the path of your excel file in Python script. 
+2.Run the python script.
+Note: Before running the script and making excel check the sample excel file.
+
+
